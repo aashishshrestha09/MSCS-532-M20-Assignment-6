@@ -1,4 +1,4 @@
-# Medians, Order Statistics & Elementary Data Structures
+# Part 1: Medians and Order Statistics Selection Algorithms
 
 ## Overview
 
@@ -42,12 +42,19 @@ Unit tests are provided using Python’s built-in `unittest` framework to verify
 
 ### Clone the repository
 
+If you haven't cloned the repository yet, run:
+
 ```bash
 git clone https://github.com/aashishshrestha09/MSCS-532-M20-Assignment-6.git
 cd MSCS-532-M20-Assignment-6
 ```
 
+> [!TIP]
+> If you already have the repository cloned, navigate to its root directory before proceeding.
+
 ### Create and Activate a Virtual Environment:
+
+If you don't already have an active virtual environment, create and activate one with:
 
 ```bash
 python3 -m venv .venv
