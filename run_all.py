@@ -20,6 +20,7 @@ Exit Codes:
 import subprocess
 import sys
 
+
 def run_command(command: str, description: str) -> None:
     """
     Run a shell command and handle errors gracefully.
@@ -39,6 +40,7 @@ def run_command(command: str, description: str) -> None:
         print(f">>> ERROR: {description} failed")
         sys.exit(1)
 
+
 def main() -> None:
     """
     Main function to run all benchmarks and tests in sequence.
@@ -46,22 +48,23 @@ def main() -> None:
     # Run Part 1: Selection Algorithms Benchmarks
     run_command(
         "python Part1_SelectionAlgorithms/empirical_analysis.py",
-        "Part 1: Selection Algorithms Benchmarks"
+        "Part 1: Selection Algorithms Benchmarks",
     )
 
     # Run Part 1: Unit Tests
     run_command(
         "python -m unittest discover Part1_SelectionAlgorithms/tests",
-        "Part 1: Unit Tests"
+        "Part 1: Unit Tests",
     )
 
     # Run Part 2: Data Structures Unit Tests
     run_command(
         "python -m unittest discover Part2_DataStructures/tests",
-        "Part 2: Data Structures Unit Tests"
+        "Part 2: Data Structures Unit Tests",
     )
 
     print(">>> All tasks completed successfully!")
+
 
 if __name__ == "__main__":
     main()
