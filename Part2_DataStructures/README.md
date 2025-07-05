@@ -73,6 +73,14 @@ python -m unittest discover Part2_DataStructures/tests
 
 ## Performance Analysis
 
+| Data Structure         | Insert           | Delete                      | Access      | Traverse |
+| :--------------------- | :--------------- | :-------------------------- | :---------- | :------- |
+| **Array**              | O(1) (end)       | O(n)                        | O(1)        | O(n)     |
+| **Stack (Array)**      | O(1) (push)      | O(1) (pop)                  | O(1) (peek) | O(n)     |
+| **Queue (Array)**      | O(1) (enqueue)   | O(n) (dequeue front)        | O(1)        | O(n)     |
+| **Singly Linked List** | O(1) (head)      | O(n)                        | O(n)        | O(n)     |
+| **Rooted Tree**        | O(1) (add child) | O(1) (remove child pointer) | O(1)        | O(n)     |
+
 - Arrays: Provide O(1) access time, but insertion and deletion may require shifting elements (O(n) time).
 - Stacks & Queues: Efficiently implemented using arrays with O(1) average time for push/pop or enqueue/dequeue operations
 - Singly Linked Lists: Allow O(1) insertion and deletion at the head, but traversal and searching are O(n).
